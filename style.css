@@ -1,5 +1,6 @@
 :root {
-  --onecolour: rgba(211, 232, 253, 0.84);
+  --oneColour: rgba(211, 232, 253, 0.84);
+  --secondColor: rgba(255, 242, 129, 0.55);
 }
 * {
   box-sizing: border-box;
@@ -10,7 +11,7 @@ body {
   flex-direction: column;
 }
 .header {
-  background-color: var(--onecolour);
+  background-color: var(--oneColour);
   height: 100vh;
 }
 .header__nav {
@@ -20,9 +21,15 @@ body {
   list-style: none;
   padding: 0;
 }
-.header__item {
-  height: 2rem;;
+.header__item,
+.main__title {
+  height: 2rem;
 }
 .header__title {
   padding: 2rem;
+}
+.main {
+  padding: 2rem;
+  background-color: var(--secondColor);
+  height: 100vh;
 }
