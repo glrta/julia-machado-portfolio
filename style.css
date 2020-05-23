@@ -88,6 +88,20 @@ p {
 .list {
   margin-top: 0;
 }
+footer {
+  padding: 2rem;
+  background-color: var(--thirdColor);
+}
+footer p {
+  text-align: right;
+  font-size: .8rem;
+  color: var(--ninethColor);
+}
+.footer__link {
+  font-weight: bold;
+  color: var(--ninethColor);
+}
+
 /* === Digital publication === */
 
 .digital-publication {
@@ -98,14 +112,39 @@ p {
 .digital-publication__title {
   fill: var(--eigthColor)
 }
+.animation {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-auto-columns: 80vh;
+  grid-template-areas: "animation";
+}
 .train {
   margin-left: -5px;
   margin-right: -40px;
+  grid-area: animation;
+  z-index: 1;
   /* margin-bottom: -20px; */ 
 }
 .digital-publication__header {
   padding: 2rem 0;
 }
+.wall {
+  margin-top: 9rem;
+  grid-area: animation;
+  animation: run 8s infinite;
+}
+
+@keyframes run {
+  0% {
+    transform: translate(-35%);
+  }
+  50% {
+    transform: translate(3%);
+  }
+  100% {
+    transform: translate(-35%);
+  }
+} 
 
 /* === WORK === */
 
