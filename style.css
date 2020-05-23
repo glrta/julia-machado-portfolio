@@ -1,6 +1,7 @@
 :root {
   --oneColour: rgba(211, 232, 253, 0.84);
   --secondColor: rgba(255, 242, 129, 0.55);
+  --thirdColor: rgba(133, 144, 242, 0.44);
 }
 * {
   box-sizing: border-box;
@@ -17,7 +18,7 @@ body {
 .header__nav {
   padding: 2rem;
 }
-.header__list {
+ul {
   list-style: none;
   padding: 0;
 }
@@ -32,4 +33,22 @@ body {
   padding: 2rem;
   background-color: var(--secondColor);
   height: 100vh;
+}
+.main__body {
+  display: flex;
+}
+/* .main__anchor {
+  width: 30%;
+} */
+.main__img {
+  width: 100%;
+}
+.about-section {
+  padding: 2rem;
+  background-color: var(--thirdColor);
+  height: 100vh;
+}
+
+h6 {
+  margin-bottom: 0;
 }
