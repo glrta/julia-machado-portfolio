@@ -113,7 +113,6 @@ p {
   margin: 0;
   display: flex;
   font-family: 'Solway', serif;
-  color: var(--ninethColor);
 }
 
 .work {
@@ -128,3 +127,6 @@ p {
 .work__body {
   display: flex;
 }
+/* .hide {
+  display: none;
+} */
