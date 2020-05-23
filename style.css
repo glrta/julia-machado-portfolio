@@ -1,8 +1,8 @@
 :root {
-  --oneColour: rgba(211, 232, 253, 0.84);
+  --firstColour: rgba(211, 232, 253, 0.84);
   --secondColor: rgba(255, 242, 129, 0.55);
   --thirdColor: rgba(133, 144, 242, 0.44);
-  --forthColor: rgba(203, 202, 251, 0.69);
+  --fourthColor: rgba(203, 202, 251, 0.69);
   --fifthColor: rgba(114, 113, 174, 0.81); 
   --sixthColor: rgb(135, 115, 81);
   --seventhColor: rgb(124, 64, 145);
@@ -15,7 +15,8 @@
 a {
   text-decoration: none;
 }
-body {
+.homepage,
+.digital-page {
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -23,7 +24,7 @@ body {
   color: var(--ninethColor);
 }
 .header {
-  background-color: var(--oneColour);
+  background-color: var(--firstColour);
 }
 .header__nav {
   padding: 2rem;
@@ -90,7 +91,7 @@ p {
 /* === Digital publication === */
 
 .digital-publication {
-  background-color: var(--forthColor);
+  background-color: var(--fourthColor);
   height: 100vh;
   overflow: hidden;
 }
@@ -98,7 +99,7 @@ p {
   fill: var(--eigthColor)
 }
 .train {
-  margin-left: -10px;
+  margin-left: -5px;
   margin-right: -40px;
   /* margin-bottom: -20px; */ 
 }
@@ -108,7 +109,22 @@ p {
 
 /* === WORK === */
 
+.work-page {
+  margin: 0;
+  display: flex;
+  font-family: 'Solway', serif;
+  color: var(--ninethColor);
+}
+
 .work {
   background-color: var(--fifthColor);
-  height: 100vh;
+}
+.work__title {
+  fill: var(--fourthColor)
+}
+.work__header {
+  padding: 2rem 0;
+}
+.work__body {
+  display: flex;
 }
