@@ -226,20 +226,20 @@ footer p {
   fill: var(--fourthColor)
 }
 .work__header {
-  /* padding: 2rem 0; */
   position: fixed;
   padding: 2rem;
+  z-index: 1;
 }
 .work__body {
-  padding-top: 11rem;
   display: flex;
 }
 .zine-card {
   position: relative;
-  margin: 0 25rem;
+  height: 100vh;
+  padding-top: 11rem;
 }
 .zine-card__one {
-  margin-left: 5rem;
+  padding-left: 5rem;
 }
 .zine {
   padding: 1rem;
@@ -257,50 +257,117 @@ dd:first-child {
 }
 /* Zines and stamps: specifics */
 
+.zine-card__one {
+  width: 800px
+}
 .zine-one {
   height: 350px;
 }
 .stamp-one {
-  top: 211px;
-  left: 107px;
+  top: 387px;
+  left: 188px;
 }
 .zine-one__details {
-  top: 400px;
-  left: 400px;
+  top: 544px;
+  left: 480px;
   width: 280px;
 }
+/* == */
 
+.zine-card__two {
+  width: 650px
+}
 .zine-two {
   height: 500px;
   margin-top: 10rem;
 }
 .stamp-two {
-  top: -30px;
-  left: 129px;
+  top: 146px;
+  left: 130px;
 }
 .zine-two__details {
-  left: -80px;
-  top: -40px;
+  top: 175px;
+  left: -50px;
   width: 280px;
 }
 
+/* == */
+
+.zine-card__three {
+  width: 690px;
+  padding-left: 150px;
+}
 .zine-three {
   height: 400px;
   margin-top: 3rem;
 }
 .stamp-three{
-  top: 315px;
+  padding-left: 150px;
+  top: 490px;
   left: 60px;
 }
 .zine-three__details {
-  left: -210px;
-  top: 430px;
+  top: 600px;
+  left: -60px;
   width: 260px;
 }
 
+/* == */
 
+.zine-card__four {
+  width: 650px
+}
+.zine-four {
+  height: 350px;
+  margin-top: -5rem;
+}
+.stamp-four {
+  top: 237px;
+  left: 119px;
+}
+.zine-four__details {
+  top: 600px;
+  width: 290px;
+}
 
+/* == */
 
+.zine-card__five {
+  width: 650px;
+}
+.zine-five {
+  height: 450px;
+  margin-top: -5rem;
+  right: 75px;
+}
+.stamp-five {
+  top: 407px;
+  left: 361px;
+}
+.zine-five__details {
+  top: 600px;
+  width: 230px;
+}
+
+/* == */
+
+.zine-card__six {
+  width: 650px;
+  margin-left: 300px; 
+}
+.zine-six {
+  height: 600px;
+  margin-top: 10rem;
+}
+.stamp-six {
+  top: 174px;
+  left: 150px;
+}
+.zine-six__details {
+  top: 195px;
+  left: -100px;
+  width: 350px;
+}
 
 /* .hide {
   display: none;
