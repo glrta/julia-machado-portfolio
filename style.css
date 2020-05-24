@@ -25,6 +25,10 @@ a {
 }
 .header {
   background-color: var(--firstColour);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .header__nav {
   padding: 2rem;
@@ -44,6 +48,12 @@ ul {
 }
 .header__title {
   padding: 2rem;
+}
+h1 {
+  width: 70vw;
+  margin: 0 auto;
+}
+.header__img {
 }
 .header__julia-machado,
 .landing-img {
