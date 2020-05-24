@@ -171,8 +171,8 @@ footer p {
 .digital-publication {
   background-color: var(--fourthColor);
   height: 100vh;
-  
-  /* overflow: hidden; */
+  max-width: 1600px;
+  overflow: hidden;
 }
 .digital-publication__header {
   padding: 2rem;
@@ -197,13 +197,26 @@ footer p {
   top: 80px;
   animation: run 8s infinite;
 }
+.border-right,
+.border-left {
+  position: absolute;
+  height: 800px;
+  width: 500px;
+  background-color: var(--fourthColor);
+}
+.border-left {
+  left: -494px;
+}
+.border-right {
+  left: 1206px;
+}
 
 @keyframes run {
   0% {
     transform: translate(-55%);
   }
   50% {
-    transform: translate(1%);
+    transform: translate(0.28%);
   }
   100% {
     transform: translate(-55%);
