@@ -1,6 +1,6 @@
 :root {
   --firstColour: rgba(189, 221, 252, 0.84);
-  --secondColor: rgb(255, 247, 170);
+  --secondColor: rgba(255, 247, 170, 0.92);
   --thirdColor: rgba(133, 144, 242, 0.44);
   --fourthColor: rgba(203, 202, 251, 0.69);
   --fifthColor: rgba(75, 73, 184, 0.81); 
@@ -31,11 +31,12 @@ a {
   justify-content: space-between;
 }
 .header__nav {
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem 2rem 0;
 }
 ul {
   list-style: none;
   padding: 0;
+  margin: 0
 }
 .header__item {
   height: 2rem;
@@ -66,14 +67,12 @@ ul {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* outline: red solid; */
 }
 .main__title {
   fill: var(--fifthColor);
 }
 .main__body {
   padding: 2rem 0;
-  /* outline: red solid; */
   flex-grow: 1;
   display: flex;
   justify-items: center;
@@ -88,9 +87,8 @@ ul {
 }
 .main__card {
   position: relative;
-  /* outline: red solid; */
   height: 350px;
-  margin: 10px 0;
+  margin: 10px;
   flex-basis: 30vw;
 }
 .main__anchor::before {
@@ -107,19 +105,44 @@ ul {
 .about-section {
   padding: 2rem;
   background-color: var(--thirdColor);
+  height: 100vh;
 }
 .about-section__title {
   fill: var(--eigthColor)
 }
 .about-section__body {
   display: flex;
+  justify-content: space-between;
+}
+.bio {
+  flex-basis: 35vw;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
 }
 .bio__title {
-  height: 2rem;
+  height: 2.5rem;
+}
+.bio__body {
+  flex-grow: 1;;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.bio__body p {
+  margin-bottom: 5rem;
+}
+.bio__title,
+.cv__title {
   fill: var(--eigthColor)
 }
+.cv__title {
+  height: 2rem;
+}
+
 .bio__self-portrait {
-  fill: var(--eigthColor)
+  fill: var(--eigthColor);
 }
 h5 {
   margin-bottom: 0;
