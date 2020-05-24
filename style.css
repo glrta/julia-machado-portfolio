@@ -216,6 +216,7 @@ footer p {
   margin: 0;
   display: flex;
   font-family: 'Solway', serif;
+  height: 100vh;
 }
 
 .work {
@@ -225,11 +226,82 @@ footer p {
   fill: var(--fourthColor)
 }
 .work__header {
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
+  position: fixed;
+  padding: 2rem;
 }
 .work__body {
+  padding-top: 11rem;
   display: flex;
 }
+.zine-card {
+  position: relative;
+  margin: 0 25rem;
+}
+.zine-card__one {
+  margin-left: 5rem;
+}
+.zine {
+  padding: 1rem;
+  position: absolute;
+}
+.stamp {
+  height: 350px;
+  position: absolute;
+}
+.zine__details {
+  position: absolute;
+}
+dd:first-child {
+  font-size: 1.2rem;
+}
+/* Zines and stamps: specifics */
+
+.zine-one {
+  height: 350px;
+}
+.stamp-one {
+  top: 211px;
+  left: 107px;
+}
+.zine-one__details {
+  top: 400px;
+  left: 400px;
+  width: 280px;
+}
+
+.zine-two {
+  height: 500px;
+  margin-top: 10rem;
+}
+.stamp-two {
+  top: -30px;
+  left: 129px;
+}
+.zine-two__details {
+  left: -80px;
+  top: -40px;
+  width: 280px;
+}
+
+.zine-three {
+  height: 400px;
+  margin-top: 3rem;
+}
+.stamp-three{
+  top: 315px;
+  left: 60px;
+}
+.zine-three__details {
+  left: -210px;
+  top: 430px;
+  width: 260px;
+}
+
+
+
+
+
 /* .hide {
   display: none;
 } */
