@@ -1,9 +1,9 @@
 :root {
-  --firstColour: rgba(211, 232, 253, 0.84);
-  --secondColor: rgba(255, 242, 129, 0.55);
+  --firstColour: rgba(189, 221, 252, 0.84);
+  --secondColor: rgb(255, 247, 170);
   --thirdColor: rgba(133, 144, 242, 0.44);
   --fourthColor: rgba(203, 202, 251, 0.69);
-  --fifthColor: rgba(114, 113, 174, 0.81); 
+  --fifthColor: rgba(75, 73, 184, 0.81); 
   --sixthColor: rgb(135, 115, 81);
   --seventhColor: rgb(124, 64, 145);
   --eigthColor: rgb(118, 71, 179);
@@ -25,13 +25,13 @@ a {
 }
 .header {
   background-color: var(--firstColour);
-  height: 100vh;
   display: flex;
+  height: 100vh;
   flex-direction: column;
   justify-content: space-between;
 }
 .header__nav {
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
 }
 ul {
   list-style: none;
@@ -46,32 +46,64 @@ ul {
 .header__about {
   fill: var(--sixthColor)
 }
-.header__title {
-  padding: 2rem;
+.header__digital-publication {
+  height: 3rem;
 }
-h1 {
+.header__title{
   width: 70vw;
   margin: 0 auto;
-}
-.header__img {
 }
 .header__julia-machado,
 .landing-img {
   fill: var(--fifthColor);
 }
+
+/*  ======= */
+
 .main {
   padding: 2rem;
   background-color: var(--secondColor);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* outline: red solid; */
 }
 .main__title {
   fill: var(--fifthColor);
 }
 .main__body {
+  padding: 2rem 0;
+  /* outline: red solid; */
+  flex-grow: 1;
   display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .main__img {
-  width: 100%;
+  display: block;
+  height: 100%;
+  margin: 0 auto;
 }
+.main__card {
+  position: relative;
+  /* outline: red solid; */
+  height: 350px;
+  margin: 10px 0;
+  flex-basis: 30vw;
+}
+.main__anchor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* ======== */
+
 .about-section {
   padding: 2rem;
   background-color: var(--thirdColor);
@@ -95,9 +127,8 @@ h5 {
 p {
   margin: 0;
 }
-.list {
-  margin-top: 0;
-}
+
+/*  ======== */
 footer {
   padding: 2rem;
   background-color: var(--thirdColor);
