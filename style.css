@@ -205,11 +205,11 @@ footer p {
 .border-left {
   position: absolute;
   height: 800px;
-  width: 500px;
+  width: 2000px;
   background-color: var(--fourthColor);
 }
 .border-left {
-  left: -494px;
+  left: -1995px;
 }
 .border-right {
   left: 1206px;
