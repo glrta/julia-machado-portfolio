@@ -64,7 +64,7 @@ ul {
 .main {
   padding: 2rem;
   background-color: var(--secondColor);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -105,7 +105,7 @@ ul {
 .about-section {
   padding: 2rem;
   background-color: var(--thirdColor);
-  height: 100vh;
+  min-height: 100vh;
 }
 .about-section__title {
   fill: var(--eigthColor)
@@ -386,6 +386,8 @@ dd:first-child {
   width: 350px;
 }
 
-/* .hide {
-  display: none;
-} */
+@media screen and (max-width: 600px) {
+  .about-section__body {
+    flex-direction: column;
+  }
+}
