@@ -233,7 +233,7 @@ footer p {
   margin: 0;
   display: flex;
   font-family: 'Solway', serif;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .work {
